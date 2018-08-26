@@ -28,7 +28,7 @@
 
     <groupId>tk.mybatis</groupId>
     <artifactId>mapper-parent</artifactId>
-    <version>1</version>
+    <version>3</version>
     <packaging>pom</packaging>
 
     <name>mapper-parent</name>
@@ -158,6 +158,11 @@
                     </execution>
                 </executions>
             </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
         </plugins>
     </build>
     <profiles>
