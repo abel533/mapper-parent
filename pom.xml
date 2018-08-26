@@ -61,7 +61,7 @@
         <jdk.version>1.6</jdk.version>
         <jpa.version>1.0</jpa.version>
         <slf4j.version>1.7.25</slf4j.version>
-        <mybatis.version>3.4.5</mybatis.version>
+        <mybatis.version>3.4.6</mybatis.version>
         <!--test-->
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
