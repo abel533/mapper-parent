@@ -28,7 +28,7 @@
 
     <groupId>tk.mybatis</groupId>
     <artifactId>mapper-parent</artifactId>
-    <version>3</version>
+    <version>5</version>
     <packaging>pom</packaging>
 
     <name>mapper-parent</name>
@@ -58,10 +58,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <jdk.version>1.6</jdk.version>
-        <jpa.version>1.0</jpa.version>
-        <slf4j.version>1.7.25</slf4j.version>
-        <mybatis.version>3.4.6</mybatis.version>
+        <jdk.version>8</jdk.version>
+        <jpa.version>2.2</jpa.version>
+        <slf4j.version>1.7.26</slf4j.version>
+        <mybatis.version>3.5.2</mybatis.version>
         <!--test-->
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
@@ -72,9 +72,10 @@
         <dependencies>
             <dependency>
                 <groupId>javax.persistence</groupId>
-                <artifactId>persistence-api</artifactId>
+                <artifactId>javax.persistence-api</artifactId>
                 <version>${jpa.version}</version>
             </dependency>
+
 
             <!--optional-->
             <dependency>
@@ -166,30 +167,6 @@
         </plugins>
     </build>
     <profiles>
-        <profile>
-            <id>mybatis-3.2.4</id>
-            <properties>
-                <mybatis.version>3.2.4</mybatis.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>mybatis-3.2.8</id>
-            <properties>
-                <mybatis.version>3.2.8</mybatis.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>mybatis-3.3.0</id>
-            <properties>
-                <mybatis.version>3.3.0</mybatis.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>mybatis-3.4.0</id>
-            <properties>
-                <mybatis.version>3.4.0</mybatis.version>
-            </properties>
-        </profile>
         <profile>
             <id>release</id>
             <build>
